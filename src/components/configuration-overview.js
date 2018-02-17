@@ -18,7 +18,7 @@ class ConfigurationOverview extends Component {
 
   render() {
     return ( 
-	<View title = "Overview" subtitle = "Configuration" >
+	<View title = "Setup" subtitle = "Instructions" >
       <p>Honeytrack Agent</p>
 
 		<p>The Honeytrack agent is a small lightweight honeypot listener that forwards traffic to a central honeytrack server.</p>
