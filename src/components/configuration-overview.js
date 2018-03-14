@@ -25,18 +25,18 @@ class ConfigurationOverview extends Component {
 			You can participate in this project, and monitor attacks on your own IP address!
 			For this, we use the honey<b>trap</b> agent, from the project Honeytrack is based on.
 			The Honeytrap agent is a small lightweight honeypot listener that forwards traffic to our central Honeytrack server.
-			All traffic is fowarded to the central server, so you're not actually running a telnet server on your device.
+			All traffic is forwarded to the central server, so you're not actually running a telnet server on your device.
 		</p>
 		<h2>Installation</h2>
 		<p>
-			The Honeytrack agent comes as a preconfigured .deb package for the ARM architecture. 
-			This package is suitable for all ARM based devices such as the Raspberry Pi, running a Debian-based distribution like Armbian, Raspbian, or Ubuntu Core.
-			If you would like to participate but don't have a device with the above requirements, instructions for installation from source are below.
+			The Honeytrack agent comes as a preconfigured .deb package for the ARM and X86 architectures. 
+			The ARM package is suitable for all ARM based devices such as the Raspberry Pi, running a Debian-based distribution like Armbian, Raspbian, or Ubuntu Core.
+			Other devices such as PC's, laptops or cloud instances can use the X86 package.
 		</p>
 		<p>
-			The package can be downloaded from <a href="https://www.networksecuritycourse.nl/honeytrap-agent-arm.deb">here</a>, 
-			or with <code>wget https://www.networksecuritycourse.nl/honeytrap-agent-arm.deb</code>
-			After you downloaded the package, install it with <code>sudo dpkg -i honeytrack-agent-arm.deb</code>.
+			The package can be downloaded from <a href="https://www.networksecuritycourse.nl/honeytrap-agent-arm.deb">here for ARM</a>, or from from <a href="https://www.networksecuritycourse.nl/honeytrap-agent-x86.deb">here for X86</a>
+			or with <code>wget https://www.networksecuritycourse.nl/honeytrap-agent-arm.deb</code> or <code>wget https://www.networksecuritycourse.nl/honeytrap-agent-x86.deb</code>
+			After you downloaded the package, install it with <code>sudo dpkg -i honeytrap-agent-arm.deb</code> or <code>sudo dpkg -i honeytrap-agent-x86.deb</code>.
 			This installs the application and configuration suitable for participation in the experiment.
 			You can start the Honeytrack Agent with <code>sudo service honeytrap-agent start</code>.
 			The agent will now start in the background and retrieve its configuration from our server.
@@ -49,8 +49,8 @@ class ConfigurationOverview extends Component {
 		</p>
 		<p>
 			To summarize:<br /><br />
-			<code>wget https://www.networksecuritycourse.nl/honeytrap-agent-arm.deb</code><br />
-			<code>sudo dpkg -i honeytrack-agent-arm.deb</code><br />
+			<code>wget https://www.networksecuritycourse.nl/honeytrap-agent-arm.deb</code> or <code>wget https://www.networksecuritycourse.nl/honeytrap-agent-x86.deb</code><br />
+			<code>sudo dpkg -i honeytrap-agent-arm.deb</code> or <code>sudo dpkg -i honeytrap-agent-x86.deb</code><br />
 			<code>sudo service honeytrap-agent start</code><br />
 		</p>
 		<h2>Installation from source</h2>
